@@ -8,13 +8,12 @@ export default function JsonLd() {
     alternateName: 'Diego Navarro',
     description: 'Psicólogo licenciado especialista en terapia individual para adultos. Atención presencial en Xalapa, Veracruz y modalidad online.',
     url: 'https://psicologo-diego-navarro.vercel.app',
-    logo: 'https://psicologo-diego-navarro.vercel.app/icon.png',
+    logo: 'https://psicologo-diego-navarro.vercel.app/icon-512.png',
     image: 'https://psicologo-diego-navarro.vercel.app/og-image.jpg',
     sameAs: [
       'https://wa.me/523316360640',
-      'https://facebook.com',
-      'https://instagram.com',
-      'https://linkedin.com',
+      'https://www.linkedin.com/in/diego-navarro-a4a56207',
+      'https://calendly.com/danavarro2040/30min',
     ],
     knowsAbout: [
       'Psicología clínica',
@@ -39,12 +38,13 @@ export default function JsonLd() {
       addressCountry: 'MX',
     },
     telephone: '+52-33-1636-0640',
-    email: 'diego.navarro.psicologo@gmail.com',
+    email: 'danavarro2040@gmail.com',
     availableService: [
       {
         '@type': 'MedicalTherapy',
         name: 'Terapia individual adultos - Online',
         description: 'Sesiones de psicoterapia individual para adultos mediante videollamada segura.',
+        url: 'https://calendly.com/danavarro2040/30min',
       },
       {
         '@type': 'MedicalTherapy',
@@ -52,9 +52,9 @@ export default function JsonLd() {
         description: 'Sesiones de psicoterapia individual para adultos en consultorio privado en Xalapa, Veracruz.',
       },
     ],
-    priceRange: '$$',
+    priceRange: 'Se acuerda en privado',
     currenciesAccepted: 'MXN',
-    paymentAccepted: 'Efectivo, Transferencia, Tarjeta',
+    paymentAccepted: 'Efectivo, Transferencia',
     openingHoursSpecification: [
       {
         '@type': 'OpeningHoursSpecification',

@@ -1,25 +1,25 @@
-# Psicólogo Diego Armando Navarro Nolasco - Web Profesional
+﻿# PsicÃ³logo Diego Armando Navarro Nolasco - Web Profesional
 
-Sitio web moderno, accesible y optimizado para SEO para promocionar los servicios de psicoterapia individual para adultos del Lic. Diego Armando Navarro Nolasco (Cédula 12309823).
+Sitio web moderno, accesible y optimizado para SEO para promocionar los servicios de psicoterapia individual para adultos del Lic. Diego Armando Navarro Nolasco (CÃ©dula 12309823).
 
-## 🚀 Características
+## ðŸš€ CaracterÃ­sticas
 
 - **Next.js 14** con App Router y TypeScript
-- **Tailwind CSS** para diseño responsive y moderno
+- **Tailwind CSS** para diseÃ±o responsive y moderno
 - **Paleta verde/naturaleza** transmitiendo calma y profesionalismo
 - **SEO optimizado**: Meta tags, Open Graph, Twitter Cards, JSON-LD (Schema.org)
-- **Accesibilidad (WCAG 2.1 AA)**: Semántica HTML, contraste, navegación por teclado, ARIA
-- **Formulario de contacto** con validación y envío a WhatsApp/email
-- **Integración WhatsApp Business** para agendamiento directo
-- **Rendimiento**: Imágenes optimizadas, fonts optimizadas, lazy loading
-- **Despliegue en Vercel** (gratis, SSL automático, CDN global)
+- **Accesibilidad (WCAG 2.1 AA)**: SemÃ¡ntica HTML, contraste, navegaciÃ³n por teclado, ARIA
+- **Formulario de contacto** con validaciÃ³n y envÃ­o a WhatsApp/email
+- **IntegraciÃ³n WhatsApp Business** para agendamiento directo
+- **Rendimiento**: ImÃ¡genes optimizadas, fonts optimizadas, lazy loading
+- **Despliegue en Vercel** (gratis, SSL automÃ¡tico, CDN global)
 
-## 📋 Requisitos
+## ðŸ“‹ Requisitos
 
 - Node.js 18.17+
 - npm / yarn / pnpm
 
-## 🛠 Instalación local
+## ðŸ›  InstalaciÃ³n local
 
 ```bash
 # Clonar repositorio
@@ -35,25 +35,25 @@ npm run dev
 
 Abrir [http://localhost:3000](http://localhost:3000)
 
-## 📦 Scripts disponibles
+## ðŸ“¦ Scripts disponibles
 
 ```bash
 npm run dev      # Servidor desarrollo
-npm run build    # Build producción
-npm run start    # Servidor producción
+npm run build    # Build producciÃ³n
+npm run start    # Servidor producciÃ³n
 npm run lint     # Linting
 ```
 
-## 🌐 Despliegue en Vercel (Gratis)
+## ðŸŒ Despliegue en Vercel (Gratis)
 
-### Opción 1: Desde GitHub (Recomendado)
+### OpciÃ³n 1: Desde GitHub (Recomendado)
 
 1. Sube este repo a GitHub
 2. Entra a [vercel.com](https://vercel.com) e importa el repositorio
-3. Vercel detecta Next.js automáticamente
-4. Click **Deploy** - ¡Listo!
+3. Vercel detecta Next.js automÃ¡ticamente
+4. Click **Deploy** - Â¡Listo!
 
-### Opción 2: CLI Vercel
+### OpciÃ³n 2: CLI Vercel
 
 ```bash
 npm i -g vercel
@@ -65,33 +65,33 @@ vercel --prod
 
 En Vercel > Settings > Environment Variables:
 
-| Variable | Descripción | Ejemplo |
+| Variable | DescripciÃ³n | Ejemplo |
 |----------|-------------|---------|
-| `NEXT_PUBLIC_SITE_URL` | URL producción | `https://tu-dominio.vercel.app` |
-| `NEXT_PUBLIC_WHATSAPP_NUMBER` | WhatsApp con código país | `523316360640` |
-| `NEXT_PUBLIC_EMAIL_CONTACT` | Email recepción formularios | `diego.navarro.psicologo@gmail.com` |
+| `NEXT_PUBLIC_SITE_URL` | URL producciÃ³n | `https://tu-dominio.vercel.app` |
+| `NEXT_PUBLIC_WHATSAPP_NUMBER` | WhatsApp con cÃ³digo paÃ­s | `523316360640` |
+| `NEXT_PUBLIC_EMAIL_CONTACT` | Email recepciÃ³n formularios | `danavarro2040@gmail.com` |
 | `FORMSPREE_ENDPOINT` | Endpoint Formspree (si usas) | `https://formspree.io/f/xxxx` |
 
-## 📁 Estructura del proyecto
+## ðŸ“ Estructura del proyecto
 
 ```
 src/
-├── app/
-│   ├── globals.css      # Estilos globales + Tailwind
-│   ├── layout.tsx       # Layout raíz + fonts + metadata
-│   └── page.tsx         # Página principal (composición)
-├── components/
-│   ├── Hero.tsx         # Sección hero con CTA
-│   ├── About.tsx        # Sobre mí + credenciales + valores
-│   ├── Services.tsx     # Servicios + modalidades
-│   ├── Approach.tsx     # Enfoques terapéuticos + proceso
-│   ├── Contact.tsx      # Formulario + info contacto
-│   ├── Footer.tsx       # Footer con links + legal
-│   └── JsonLd.tsx       # Schema.org structured data
-└── lib/                 # Utilidades (futuro)
+â”œâ”€â”€ app/
+â”‚   â”œâ”€â”€ globals.css      # Estilos globales + Tailwind
+â”‚   â”œâ”€â”€ layout.tsx       # Layout raÃ­z + fonts + metadata
+â”‚   â””â”€â”€ page.tsx         # PÃ¡gina principal (composiciÃ³n)
+â”œâ”€â”€ components/
+â”‚   â”œâ”€â”€ Hero.tsx         # SecciÃ³n hero con CTA
+â”‚   â”œâ”€â”€ About.tsx        # Sobre mÃ­ + credenciales + valores
+â”‚   â”œâ”€â”€ Services.tsx     # Servicios + modalidades
+â”‚   â”œâ”€â”€ Approach.tsx     # Enfoques terapÃ©uticos + proceso
+â”‚   â”œâ”€â”€ Contact.tsx      # Formulario + info contacto
+â”‚   â”œâ”€â”€ Footer.tsx       # Footer con links + legal
+â”‚   â””â”€â”€ JsonLd.tsx       # Schema.org structured data
+â””â”€â”€ lib/                 # Utilidades (futuro)
 ```
 
-## ✨ Personalización
+## âœ¨ PersonalizaciÃ³n
 
 ### Colores (tailwind.config.ts)
 ```ts
@@ -103,14 +103,14 @@ primary: {
 
 ### Contenido
 Edita los componentes en `src/components/`:
-- **Hero.tsx**: Título, subtítulo, foto
+- **Hero.tsx**: TÃ­tulo, subtÃ­tulo, foto
 - **About.tsx**: Credenciales, valores, bio
-- **Services.tsx**: Áreas de intervención
+- **Services.tsx**: Ãreas de intervenciÃ³n
 - **Approach.tsx**: Enfoques, pasos del proceso
 - **Contact.tsx**: Info contacto, campos formulario
 - **Footer.tsx**: Links, redes sociales, legal
 
-### Foto del psicólogo
+### Foto del psicÃ³logo
 Reemplaza `public/doctor.jpg` (recomendado 480x580px, WebP/AVIF)
 
 ### Favicon e icons
@@ -120,9 +120,9 @@ Genera en [realfavicongenerator.net](https://realfavicongenerator.net/) y pon en
 - `apple-touch-icon.png`
 - `manifest.json`
 
-## 📱 SEO Checklist
+## ðŸ“± SEO Checklist
 
-- [ ] Meta title/description únicos por página
+- [ ] Meta title/description Ãºnicos por pÃ¡gina
 - [ ] Open Graph + Twitter Cards
 - [ ] JSON-LD (Physician, MedicalTherapy, OpeningHours)
 - [ ] Sitemap.xml (auto con `next-sitemap`)
@@ -130,33 +130,33 @@ Genera en [realfavicongenerator.net](https://realfavicongenerator.net/) y pon en
 - [ ] Imagen OG (1200x630px) en `/public/og-image.jpg`
 - [ ] Google Search Console + Analytics
 
-## ♿ Accesibilidad
+## â™¿ Accesibilidad
 
 - Contraste AA/AAA en toda la paleta
-- Navegación por teclado completa
+- NavegaciÃ³n por teclado completa
 - Labels en formularios
-- Alt text en imágenes
+- Alt text en imÃ¡genes
 - ARIA en elementos interactivos
-- Skip links (añadir si necesario)
+- Skip links (aÃ±adir si necesario)
 - Reducir movimiento (`prefers-reduced-motion`)
 
-## 🔒 Privacidad y Legal
+## ðŸ”’ Privacidad y Legal
 
-Páginas legales recomendadas (crear en `src/app/`):
-- `/privacidad` - Aviso de privacidad (LFPDPPP México)
-- `/terminos` - Términos y condiciones
+PÃ¡ginas legales recomendadas (crear en `src/app/`):
+- `/privacidad` - Aviso de privacidad (LFPDPPP MÃ©xico)
+- `/terminos` - TÃ©rminos y condiciones
 - `/consentimiento` - Consentimiento informado terapia
 
-## 📞 Contacto directo
+## ðŸ“ž Contacto directo
 
 - **WhatsApp**: https://wa.me/523316360640
-- **Email**: diego.navarro.psicologo@gmail.com
+- **Email**: danavarro2040@gmail.com
 - **Tel**: 331 636 0640
 
-## 📄 Licencia
+## ðŸ“„ Licencia
 
 MIT License - Libre para uso personal y comercial.
 
 ---
 
-**¿Necesitas ayuda?** Abre un issue o contacta por WhatsApp.
+**Â¿Necesitas ayuda?** Abre un issue o contacta por WhatsApp.

@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { ArrowRight, MessageSquare, Calendar, MapPin, CheckCircle } from 'lucide-react';
+import { ArrowRight, MessageSquare, Calendar, MapPin, CheckCircle, CalendarCheck } from 'lucide-react';
 
 export default function Hero() {
   return (
@@ -38,6 +38,17 @@ export default function Hero() {
               >
                 <MessageSquare className="w-5 h-5" aria-hidden="true" />
                 Agendar por WhatsApp
+                <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+              </a>
+              <a 
+                href="https://calendly.com/danavarro2040/30min"
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="btn-primary group w-full sm:w-auto justify-center"
+                aria-label="Agendar cita en línea con Calendly"
+              >
+                <CalendarCheck className="w-5 h-5" aria-hidden="true" />
+                Agendar cita en línea
                 <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" aria-hidden="true" />
               </a>
               <a 
