@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://psicologo-diego-navarro.vercel.app/sitemap.xml

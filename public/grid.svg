@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <path d="M60 0H0v60h60V0z" fill="none"/>
+  <path d="M60 0H0v60h60V0z" fill="none" stroke="currentColor" stroke-width="0.5" opacity="0.1"/>
+  <line x1="0" y1="30" x2="60" y2="30" stroke="currentColor" stroke-width="0.5" opacity="0.1"/>
+  <line x1="30" y1="0" x2="30" y2="60" stroke="currentColor" stroke-width="0.5" opacity="0.1"/>
+</svg>
