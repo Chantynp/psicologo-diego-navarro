@@ -16,8 +16,8 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://psicologo-diego-navarro.vercel.app'),
-  title: 'Diego Armando Navarro Nolasco | Psicólogo Gestalt y Dr. en Neurociencias | Xalapa',
-  description: 'Terapia Gestalt para adultos con enfoque en el aquí y ahora. Doctor en Investigaciones Cerebrales (UV), cédula 12309823. Presencial en Xalapa y en línea.',
+  title: 'Diego Armando Navarro Nolasco | Psicólogo y Psicoterapia Gestalt | Xalapa y en línea',
+  description: 'Psicoterapia Gestalt individual para adultos, presencial en Xalapa y en línea. Psicólogo con formación doctoral en Investigaciones Cerebrales (UV), cédula 12309823.',
   keywords: ['psicólogo', 'terapia gestalt', 'psicología', 'Xalapa', 'terapia online', 'salud mental', 'ansiedad', 'depresión', 'neurociencias', 'Diego Navarro', 'Navarro Nolasco'],
   authors: [{ name: 'Diego Armando Navarro Nolasco' }],
   creator: 'Diego Armando Navarro Nolasco',
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'es_MX',
     url: 'https://psicologo-diego-navarro.vercel.app',
-    title: 'Diego Armando Navarro Nolasco | Psicólogo Gestalt y Dr. en Neurociencias',
-    description: 'Terapia Gestalt para adultos. Doctor en Investigaciones Cerebrales (UV). Presencial en Xalapa y en línea. Cédula 12309823.',
+    title: 'Diego Armando Navarro Nolasco | Psicólogo y Psicoterapia Gestalt',
+    description: 'Psicoterapia Gestalt para adultos. Psicólogo con formación doctoral en Investigaciones Cerebrales (UV). Presencial en Xalapa y en línea. Cédula 12309823.',
     siteName: 'Diego Armando Navarro Nolasco - Psicólogo',
     images: [
       {

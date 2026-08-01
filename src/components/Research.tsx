@@ -13,7 +13,7 @@ const publications = [
     title: 'Electroencefalografía en reposo en el trastorno del espectro autista: revisión narrativa de patrones, conectividad y biomarcadores funcionales',
     venue: 'Revista eNeurobiología, UV · 2025',
     doi: '10.25009/eb.v16i41.2652',
-    url: 'https://eneurobiologia.uv.mx/index.php/eneurobiologia/article/view/2539',
+    url: 'https://eneurobiologia.uv.mx/index.php/eneurobiologia/article/view/2652',
   },
 ];
 
@@ -21,13 +21,13 @@ const news = [
   {
     title: 'Apoyo social es vital para la salud mental de jóvenes',
     source: 'Universo · Sistema de noticias de la UV',
-    description: 'Cobertura de su tesis doctoral sobre biomarcadores de ansiedad con EEG y Big Data.',
+    description: 'Cobertura de su investigación doctoral sobre asociaciones entre ansiedad, apoyo social y EEG.',
     url: 'https://www.uv.mx/prensa/general/apoyo-social-es-vital-para-la-salud-mental-de-jovenes/',
   },
   {
     title: 'Apoyo social es vital para la salud mental de jóvenes',
     source: 'La Silla Rota · Veracruz',
-    description: 'Sueño, soledad percibida y ciclo ovárico alteran las ondas cerebrales, según su estudio.',
+    description: 'Estudio exploratorio sobre diferencias en patrones de EEG asociadas con ansiedad, apoyo social y variables contextuales.',
     url: 'https://lasillarota.com/veracruz/local/2026/2/21/apoyo-social-es-vital-para-la-salud-mental-de-jovenes-587852.html',
   },
 ];
@@ -45,7 +45,7 @@ export default function Research() {
             Lo que aprendí del <span className="text-primary-700">cerebro</span>
           </h2>
           <p className="section-subtitle mx-auto">
-            Mi tesis doctoral midió la ansiedad en las ondas cerebrales de jóvenes con EEG: el bienestar se construye en la relación y en el cuerpo.
+            Mi investigación doctoral exploró asociaciones entre ansiedad, apoyo social percibido y patrones de EEG en reposo en jóvenes adultos sanos. Resultados exploratorios, no biomarcadores diagnósticos.
           </p>
         </div>
 

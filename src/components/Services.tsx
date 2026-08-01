@@ -5,23 +5,23 @@ import { Brain, Cloud, Heart, Anchor, User, Video } from 'lucide-react';
 const services = [
   {
     icon: Brain,
-    title: 'Ansiedad y estrés',
-    description: 'Preocupación constante, tensión que no cede. Aprendemos a escuchar la señal de tu cuerpo.',
+    title: 'Ansiedad, estrés y preocupación persistente',
+    description: 'Tensión que no cede, pensamientos que se repiten. Aprendemos a escuchar la señal de tu cuerpo.',
   },
   {
     icon: Cloud,
-    title: 'Depresión y tristeza',
-    description: 'Falta de energía, pérdida de interés, vacío. Un espacio para volver a habitar tu vida.',
+    title: 'Desánimo, tristeza y pérdida de interés',
+    description: 'Falta de energía, vacío. Un espacio para volver a habitar tu vida.',
   },
   {
     icon: Heart,
-    title: 'Autoestima y relaciones',
+    title: 'Autoestima, límites y relaciones',
     description: 'Autocrítica, inseguridad, límites difíciles. Sanar el vínculo contigo para sanar con otros.',
   },
   {
     icon: Anchor,
-    title: 'Transiciones de vida',
-    description: 'Duelos, separaciones, cambios de etapa. Crisis que son puertas hacia otra forma de vivir.',
+    title: 'Duelos y transiciones vitales',
+    description: 'Separaciones, cambios de etapa. Crisis que son puertas hacia otra forma de vivir.',
   },
 ];
 

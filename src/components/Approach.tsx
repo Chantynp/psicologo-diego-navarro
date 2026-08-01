@@ -11,7 +11,7 @@ const principles = [
   {
     icon: Sun,
     title: 'Aquí y ahora',
-    description: 'Trabajamos con lo que traes hoy a la sesión, no con lecturas lejanas de tu historia.',
+    description: 'Trabajamos principalmente con la experiencia que aparece en el presente, reconociendo que tu historia y contexto también participan.',
   },
   {
     icon: Hand,
@@ -29,7 +29,7 @@ const processSteps = [
   {
     number: '01',
     title: 'Nos conocemos',
-    description: 'Primera sesión para escucharte y sentir si conectamos. Sin compromiso.',
+    description: 'Primera sesión de valoración y encuentro: comprender tu motivo, acordar objetivos iniciales y ver si esta modalidad encaja. No obliga a continuar.',
   },
   {
     number: '02',
@@ -56,7 +56,7 @@ export default function Approach() {
             Terapia <span className="text-primary-700">Gestalt</span>
           </h2>
           <p className="section-subtitle mx-auto">
-            La Gestalt no etiqueta síntomas: te acompaña a vivir con más conciencia y libertad.
+            Los diagnósticos pueden orientar la comprensión clínica, pero no agotan la singularidad de una persona ni determinan por sí solos el proceso terapéutico.
           </p>
         </div>
 

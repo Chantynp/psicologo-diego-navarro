@@ -3,18 +3,16 @@
 export default function JsonLd() {
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'Physician',
+    '@type': ['Person', 'ProfessionalService'],
     name: 'Diego Armando Navarro Nolasco',
     alternateName: 'Diego Navarro',
-    description: 'Psicólogo y Doctor en Investigaciones Cerebrales (Universidad Veracruzana). Terapia Gestalt individual para adultos. Presencial en Xalapa, Veracruz y en línea.',
+    jobTitle: 'Psicólogo',
+    description: 'Psicólogo con formación en Psicoterapia Gestalt para adultos e investigación en neurociencias. Terapia individual para adultos, presencial en Xalapa, Veracruz y en línea.',
     url: 'https://psicologo-diego-navarro.vercel.app',
     logo: 'https://psicologo-diego-navarro.vercel.app/icon-512.png',
     image: 'https://psicologo-diego-navarro.vercel.app/og-image.jpg',
     sameAs: [
-      'https://wa.me/523316360640',
       'https://www.linkedin.com/in/diego-navarro-a4a56207',
-      'https://calendly.com/danavarro2040/30min',
-      'https://www.uv.mx/prensa/general/apoyo-social-es-vital-para-la-salud-mental-de-jovenes/',
     ],
     knowsAbout: [
       'Terapia Gestalt',
@@ -25,11 +23,10 @@ export default function JsonLd() {
       'Autoestima',
       'Regulación emocional',
       'Duelo y pérdidas',
-      'Biomarcadores de ansiedad',
+      'Electroencefalografía en reposo y variables psicosociales',
       'Electroencefalografía',
     ],
-    medicalSpecialty: 'Psychiatry',
-    credential: 'Cédula profesional 12309823 · Doctor en Investigaciones Cerebrales (Universidad Veracruzana)',
+    credential: 'Cédula profesional 12309823 · Doctorado en Investigaciones Cerebrales (Universidad Veracruzana): formación concluida, grado en proceso',
     alumniOf: [
       {
         '@type': 'EducationalOrganization',

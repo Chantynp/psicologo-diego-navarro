@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Aviso de Privacidad | Diego Armando Navarro Nolasco - Psicólogo',
-  description: 'Aviso de privacidad conforme a la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (México).',
+  description: 'Aviso de privacidad conforme a la normativa federal mexicana vigente en materia de protección de datos personales.',
 };
 
 export default function PrivacidadPage() {
@@ -20,7 +20,7 @@ export default function PrivacidadPage() {
           <section>
             <h2 className="text-xl font-semibold text-neutral-900 mb-3">1. Responsable del tratamiento</h2>
             <p>
-              Lic. Diego Armando Navarro Nolasco, Licenciado en Psicología y Doctor en Investigaciones Cerebrales, Cédula profesional 12309823, con consultorio presencial en Xalapa, Veracruz, México.
+              Lic. Diego Armando Navarro Nolasco, Licenciado en Psicología con formación doctoral en Investigaciones Cerebrales (Universidad Veracruzana, grado en proceso), Cédula profesional 12309823, con consultorio presencial en Xalapa, Veracruz, México.
             </p>
             <p>
               Contacto: WhatsApp 331 636 0640 · danavarro2040@gmail.com
@@ -46,7 +46,7 @@ export default function PrivacidadPage() {
               <li>Emitir comprobantes de pago si aplica.</li>
             </ul>
             <p className="mt-3">
-              Los datos personales <strong>sensibles</strong> (salud, información psicológica) solo se tratarán con tu consentimiento expreso, conforme al artículo 9 de la LFPDPPP.
+              Los datos personales <strong>sensibles</strong> (salud, información psicológica) solo se tratarán con tu consentimiento expreso, conforme a la normativa federal vigente en materia de protección de datos personales en posesión de particulares (México). Este aviso requiere revisión jurídica especializada antes de considerarse documento definitivo.
             </p>
           </section>
 
@@ -65,9 +65,12 @@ export default function PrivacidadPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-neutral-900 mb-3">6. Cookies y servicios de terceros</h2>
+            <h2 className="text-xl font-semibold text-neutral-900 mb-3">6. Cookies y proveedores tecnológicos</h2>
             <p>
-              Este sitio web no utiliza cookies de rastreo. Al agendar citas a través de <strong>Calendly</strong> o enviar el formulario de contacto (gestionado por <strong>Formspree</strong>), tus datos se tratan conforme a las políticas de privacidad de dichos servicios, y se utilizan exclusivamente para responder a tu solicitud o gestionar tu cita. No se comparten con otros terceros, salvo obligación legal.
+              Este sitio web no utiliza cookies de rastreo. Al agendar citas a través de <strong>Calendly</strong> o enviar el formulario de contacto (gestionado por <strong>Formspree</strong>), estos servicios actúan como <strong>encargados del tratamiento</strong>: reciben y almacenan tus datos para operar sus plataformas y pueden implicar transferencias a servidores fuera de México. Tus datos se utilizan exclusivamente para responder a tu solicitud o gestionar tu cita y no se comparten con otros terceros, salvo obligación legal.
+            </p>
+            <p className="mt-3">
+              Los datos capturados por el sitio web (formulario y agendamiento) se mantienen <strong>separados del expediente clínico</strong>, que se integra únicamente a partir de la primera sesión.
             </p>
           </section>
 

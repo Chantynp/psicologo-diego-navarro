@@ -1,6 +1,6 @@
 ﻿# Psicólogo Diego Armando Navarro Nolasco - Web Profesional
 
-Sitio web moderno, accesible y optimizado para SEO para los servicios de **terapia Gestalt individual para adultos** del psicólogo Diego Armando Navarro Nolasco (Dr. en Investigaciones Cerebrales, cédula 12309823).
+Sitio web moderno, accesible y optimizado para SEO para los servicios de **terapia Gestalt individual para adultos** del psicólogo Diego Armando Navarro Nolasco (psicólogo con formación doctoral en Investigaciones Cerebrales, cédula 12309823).
 
 ## 🚀 Características
 
@@ -61,7 +61,7 @@ src/
 │   └── consentimiento/      # Consentimiento informado
 ├── components/
 │   ├── Hero.tsx             # Hero: identidad Gestalt + CTAs
-│   ├── About.tsx            # Trayectoria (Lic. UGMN + Dr. UV) + pilares
+│   ├── About.tsx            # Trayectoria (Lic. UGMN + Doctorado UV) + pilares
 │   ├── Services.tsx         # 4 áreas de acompañamiento
 │   ├── Approach.tsx         # Principios de terapia Gestalt + proceso
 │   ├── Research.tsx         # Publicaciones y noticias reales
@@ -88,7 +88,7 @@ src/
 Paleta actual: verdes primarios (`primary.700: #15803d`). Otras opciones: azul serenidad, teal/salvia, terracota cálido, morado introspección.
 
 ### Foto del psicólogo
-Reemplaza `public/hero-doctor.jpg` (recomendado 480x580px). Regenera assets con:
+La imagen principal del hero es `public/hero-full.webp` (WebP vertical, se genera desde el PNG original). Regenera assets con:
 
 ```bash
 node scripts/generate-assets.js

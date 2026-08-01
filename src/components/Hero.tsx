@@ -14,9 +14,9 @@ export default function Hero() {
         fill
         priority
         sizes="100vw"
-        className="object-cover object-center"
+        className="object-cover object-[50%_20%]"
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-violet-950/95 via-primary-800/85 to-primary-600/60" aria-hidden="true" />
+      <div className="absolute inset-0 bg-gradient-to-r from-violet-950/90 via-primary-800/75 to-primary-600/45" aria-hidden="true" />
       <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center bg-[length:60px_60px] opacity-5" aria-hidden="true" />
 
       <div className="relative section-container py-24 lg:py-32 w-full">
@@ -26,7 +26,7 @@ export default function Hero() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-violet-300 opacity-75" />
               <span className="relative inline-flex rounded-full h-2 w-2 bg-violet-200" />
             </span>
-            Doctor en Investigaciones Cerebrales · Terapia Gestalt
+            Psicólogo · Psicoterapia Gestalt para adultos · Investigación en neurociencias
           </div>
 
           <h1 id="hero-title" className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold tracking-tight text-white leading-tight animate-fade-in-up delay-200">
@@ -64,7 +64,7 @@ export default function Hero() {
           <div className="mt-10 flex flex-wrap items-center gap-6 text-sm text-violet-100 animate-fade-in-up delay-400">
             <div className="flex items-center gap-2">
               <Brain className="w-5 h-5 text-violet-200 flex-shrink-0" aria-hidden="true" />
-              <span>Dr. en Investigaciones Cerebrales (UV)</span>
+              <span>Doctorado en Investigaciones Cerebrales (UV)</span>
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle className="w-5 h-5 text-violet-200 flex-shrink-0" aria-hidden="true" />

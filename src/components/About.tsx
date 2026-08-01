@@ -11,9 +11,9 @@ const credentials = [
   },
   {
     icon: Award,
-    title: 'Dr. en Investigaciones Cerebrales',
+    title: 'Doctorado en Investigaciones Cerebrales',
     institution: 'Universidad Veracruzana (IICE)',
-    year: 'Titulado · Febrero 2026',
+    year: 'Formación concluida · Grado en proceso',
   },
   {
     icon: BookOpen,
@@ -55,10 +55,10 @@ export default function About() {
               Ciencia del cerebro, <span className="text-primary-700">corazón Gestalt</span>
             </h2>
             <p className="mt-6 text-neutral-600 leading-relaxed">
-              Soy psicólogo y doctor en Investigaciones Cerebrales por la Universidad Veracruzana. Mi camino une dos mundos: la rigurosidad de la neurociencia y la calidez de la terapia Gestalt.
+              Soy psicólogo con formación doctoral en Investigaciones Cerebrales por la Universidad Veracruzana. Mi camino une dos mundos: la rigurosidad de la neurociencia y la calidez de la terapia Gestalt.
             </p>
             <p className="mt-4 text-neutral-600 leading-relaxed">
-              En mi tesis doctoral medí la ansiedad en las ondas cerebrales de jóvenes con electroencefalograma. Esa curiosidad me acompaña en consulta: cada persona es única, y el cambio real viene de darse cuenta.
+              Mi investigación doctoral exploró asociaciones entre ansiedad, apoyo social percibido y patrones de electroencefalografía en reposo en adultos jóvenes sanos. Resultados exploratorios, y con esa misma rigurosidad acompaño cada proceso: cada persona es única, y el cambio real viene de darse cuenta.
             </p>
             <p className="mt-4 text-neutral-600 leading-relaxed">
               Acompaño a adultos con ansiedad, depresión, autoestima y transiciones, presencial en Xalapa o en línea.

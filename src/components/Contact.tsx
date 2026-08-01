@@ -249,6 +249,9 @@ export default function Contact() {
                     placeholder="Cuéntame brevemente qué te trae aquí, horarios preferidos, dudas..."
                     disabled={state.submitting}
                   />
+                  <p className="mt-1.5 text-xs text-neutral-500">
+                    No incluyas información clínica sensible en este formulario: los detalles se tratan con seguridad en la primera sesión.
+                  </p>
                 </div>
 
                 <button

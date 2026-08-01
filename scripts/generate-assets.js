@@ -37,8 +37,8 @@ async function generateOgImage() {
       <text x="70" y="130" font-family="Arial" font-size="24" fill="#c4b5fd" font-weight="bold" letter-spacing="4">PSICÓLOGO · TERAPIA GESTALT</text>
       <text x="70" y="220" font-family="Arial" font-size="52" fill="#ffffff" font-weight="bold">Diego Armando</text>
       <text x="70" y="290" font-family="Arial" font-size="52" fill="#ffffff" font-weight="bold">Navarro Nolasco</text>
-      <text x="70" y="350" font-family="Arial" font-size="24" fill="#ddd6fe">Psicólogo y Dr. en Investigaciones Cerebrales (UV)</text>
-      <text x="70" y="400" font-family="Arial" font-size="22" fill="#a78bfa">Cédula profesional 12309823</text>
+      <text x="70" y="350" font-family="Arial" font-size="24" fill="#ddd6fe">Psicólogo · Psicoterapia Gestalt para adultos</text>
+      <text x="70" y="400" font-family="Arial" font-size="22" fill="#a78bfa">Doctorado en Investigaciones Cerebrales (UV) · Cédula 12309823</text>
       <rect x="70" y="440" width="330" height="56" rx="28" fill="#ffffff"/>
       <text x="235" y="477" font-family="Arial" font-size="22" fill="#4c1d95" font-weight="bold" text-anchor="middle">Agenda tu primera sesión</text>
     </svg>`

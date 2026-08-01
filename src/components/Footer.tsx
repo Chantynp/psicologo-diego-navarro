@@ -63,7 +63,7 @@ export default function Footer() {
               <span className="font-display font-bold text-xl text-white">Diego Navarro</span>
             </div>
             <p className="text-neutral-400 max-w-xs leading-relaxed">
-              Psicólogo y Dr. en Investigaciones Cerebrales (UV). Terapia Gestalt individual para adultos, presencial en Xalapa y en línea.
+              Psicólogo con formación doctoral en Investigaciones Cerebrales (UV). Terapia Gestalt individual para adultos, presencial en Xalapa y en línea.
             </p>
             <div className="flex flex-wrap gap-3 pt-2">
               {socialLinks.map((social, index) => (
