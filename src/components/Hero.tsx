@@ -1,15 +1,17 @@
 'use client';
 
 import Image from 'next/image';
-import { ArrowRight, MessageSquare, Calendar, MapPin, CheckCircle, CalendarCheck } from 'lucide-react';
+import { ArrowRight, MessageSquare, MapPin, CheckCircle, CalendarCheck, Brain } from 'lucide-react';
+
+const CALENDLY_URL = 'https://calendly.com/danavarro2040/30min';
 
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden" aria-labelledby="hero-title">
       <div className="absolute inset-0 bg-gradient-to-br from-primary-50 via-white to-emerald-50" aria-hidden="true" />
       <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center bg-[length:60px_60px] opacity-5" aria-hidden="true" />
-      
-      <div className="relative section-container py-20 lg:py-32">
+
+      <div className="relative section-container py-20 lg:py-28">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="max-w-2xl animate-fade-in-up">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-100 text-primary-800 text-sm font-medium mb-6 animate-fade-in-up delay-100">
@@ -17,32 +19,21 @@ export default function Hero() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-400 opacity-75" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-primary-500" />
               </span>
-              Disponible para nuevas consultas
+              Doctor en Investigaciones Cerebrales · Terapia Gestalt
             </div>
-            
+
             <h1 id="hero-title" className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold tracking-tight text-neutral-950 leading-tight animate-fade-in-up delay-200">
-              Psicólogo para <span className="text-primary-700">tu bienestar</span> emocional
+              Tu bienestar empieza en el <span className="text-primary-700">aquí y ahora</span>
             </h1>
-            
+
             <p className="mt-6 text-lg sm:text-xl text-neutral-600 leading-relaxed max-w-xl animate-fade-in-up delay-300">
-              Atención psicológica individual para adultos. Enfoque profesional y humano para acompañarte en tu proceso de crecimiento personal. Presencial en Xalapa y modalidad online.
+              Psicoterapia Gestalt para adultos, con la profundidad que da la ciencia del cerebro. Presencial en Xalapa y en línea.
             </p>
-            
+
             <div className="mt-8 flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-400">
-              <a 
-                href="https://wa.me/523316360640?text=Hola%20Diego%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20para%20terapia%20individual." 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="btn-whatsapp group w-full sm:w-auto justify-center"
-                aria-label="Agendar cita por WhatsApp"
-              >
-                <MessageSquare className="w-5 h-5" aria-hidden="true" />
-                Agendar por WhatsApp
-                <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" aria-hidden="true" />
-              </a>
-              <a 
-                href="https://calendly.com/danavarro2040/30min"
-                target="_blank" 
+              <a
+                href={CALENDLY_URL}
+                target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary group w-full sm:w-auto justify-center"
                 aria-label="Agendar cita en línea con Calendly"
@@ -51,32 +42,34 @@ export default function Hero() {
                 Agendar cita en línea
                 <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" aria-hidden="true" />
               </a>
-              <a 
-                href="#contacto" 
-                className="btn-secondary w-full sm:w-auto justify-center"
-                aria-label="Ver formulario de contacto"
+              <a
+                href="https://wa.me/523316360640?text=Hola%20Diego%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20para%20terapia%20individual."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-whatsapp group w-full sm:w-auto justify-center"
+                aria-label="Agendar cita por WhatsApp"
               >
-                <Calendar className="w-5 h-5" aria-hidden="true" />
-                Formulario de contacto
+                <MessageSquare className="w-5 h-5" aria-hidden="true" />
+                Escribir por WhatsApp
               </a>
             </div>
-            
+
             <div className="mt-10 flex flex-wrap items-center gap-6 text-sm text-neutral-500 animate-fade-in-up delay-400">
               <div className="flex items-center gap-2">
-                <CheckCircle className="w-5 h-5 text-primary-600 flex-shrink-0" aria-hidden="true" />
-                <span>Cédula profesional: 12309823</span>
+                <Brain className="w-5 h-5 text-primary-600 flex-shrink-0" aria-hidden="true" />
+                <span>Dr. en Investigaciones Cerebrales (UV)</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-5 h-5 text-primary-600 flex-shrink-0" aria-hidden="true" />
-                <span>Lic. en Psicología - Universidad del Golfo de México</span>
+                <span>Cédula profesional 12309823</span>
               </div>
               <div className="flex items-center gap-2">
-                <CheckCircle className="w-5 h-5 text-primary-600 flex-shrink-0" aria-hidden="true" />
-                <span>Presencial en Xalapa, Ver. y Online</span>
+                <MapPin className="w-5 h-5 text-primary-600 flex-shrink-0" aria-hidden="true" />
+                <span>Xalapa, Ver. y en línea</span>
               </div>
             </div>
           </div>
-          
+
           <div className="relative animate-fade-in-up delay-200" aria-hidden="true">
             <div className="relative max-w-md mx-auto">
               <div className="absolute -inset-4 bg-gradient-to-r from-primary-200 to-emerald-200 rounded-3xl blur-2xl opacity-30" />
@@ -117,7 +110,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      
+
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce" aria-hidden="true">
         <svg className="w-6 h-6 text-neutral-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" /></svg>
       </div>

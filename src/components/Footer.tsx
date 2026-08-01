@@ -28,6 +28,7 @@ export default function Footer() {
       { label: 'Sobre mí', href: '#sobre-mi' },
       { label: 'Servicios', href: '#servicios' },
       { label: 'Enfoque', href: '#enfoque' },
+      { label: 'Investigación', href: '#investigacion' },
       { label: 'Contacto', href: '#contacto' },
     ],
     servicios: [
@@ -62,7 +63,7 @@ export default function Footer() {
               <span className="font-display font-bold text-xl text-white">Diego Navarro</span>
             </div>
             <p className="text-neutral-400 max-w-xs leading-relaxed">
-              Psicólogo licenciado (Cédula 12309823). Atención individual para adultos con enfoque integrador y basado en evidencia. Presencial en Xalapa y online.
+              Psicólogo y Dr. en Investigaciones Cerebrales (UV). Terapia Gestalt individual para adultos, presencial en Xalapa y en línea.
             </p>
             <div className="flex flex-wrap gap-3 pt-2">
               {socialLinks.map((social, index) => (
