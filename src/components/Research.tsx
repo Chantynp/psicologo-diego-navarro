@@ -78,7 +78,7 @@ export default function Research() {
           {news.map((item) => (
             <article key={item.url} className="card group">
               <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center group-hover:bg-primary-700 group-hover:text-white transition-all duration-300">
+                <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-primary-100 text-primary-700 flex items-center justify-center group-hover:bg-primary-700 group-hover:text-white transition-all duration-300">
                   <Newspaper className="w-6 h-6" aria-hidden="true" />
                 </div>
                 <div>

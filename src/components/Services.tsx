@@ -65,7 +65,7 @@ export default function Services() {
         <div className="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
           {modalities.map((modality) => (
             <div key={modality.title} className="card relative overflow-hidden group">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary-50 to-emerald-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300" aria-hidden="true" />
+              <div className="absolute inset-0 bg-gradient-to-br from-primary-50 to-primary-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300" aria-hidden="true" />
               <div className="relative z-10 flex items-center gap-4">
                 <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-primary-100 text-primary-700 flex items-center justify-center group-hover:bg-primary-700 group-hover:text-white transition-all duration-300">
                   <modality.icon className="w-6 h-6" aria-hidden="true" />

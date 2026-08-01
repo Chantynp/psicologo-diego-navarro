@@ -8,7 +8,7 @@ const CALENDLY_URL = 'https://calendly.com/danavarro2040/30min';
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden" aria-labelledby="hero-title">
-      <div className="absolute inset-0 bg-gradient-to-br from-primary-50 via-white to-emerald-50" aria-hidden="true" />
+      <div className="absolute inset-0 bg-gradient-to-br from-primary-50 via-white to-primary-100" aria-hidden="true" />
       <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center bg-[length:60px_60px] opacity-5" aria-hidden="true" />
 
       <div className="relative section-container py-20 lg:py-28">
@@ -72,7 +72,7 @@ export default function Hero() {
 
           <div className="relative animate-fade-in-up delay-200" aria-hidden="true">
             <div className="relative max-w-md mx-auto">
-              <div className="absolute -inset-4 bg-gradient-to-r from-primary-200 to-emerald-200 rounded-3xl blur-2xl opacity-30" />
+              <div className="absolute -inset-4 bg-gradient-to-r from-primary-200 to-primary-100 rounded-3xl blur-2xl opacity-30" />
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-primary-100 bg-white">
                 <Image
                   src="/hero-doctor.jpg"
@@ -97,8 +97,8 @@ export default function Hero() {
               </div>
               <div className="absolute -top-6 -left-6 bg-white rounded-2xl p-4 shadow-xl border border-primary-100 animate-fade-in-up delay-400">
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-xl bg-emerald-100 flex items-center justify-center">
-                    <svg className="w-6 h-6 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" /></svg>
+                  <div className="w-12 h-12 rounded-xl bg-primary-100 flex items-center justify-center">
+                    <svg className="w-6 h-6 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" /></svg>
                   </div>
                   <div>
                     <p className="font-medium text-neutral-900">Sesiones Online</p>
