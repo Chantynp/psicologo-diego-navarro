@@ -16,9 +16,9 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://psicologo-diego-navarro.vercel.app'),
-  title: 'Diego Armando Navarro Nolasco | Psicólogo - Terapia Individual Adultos | Xalapa y Online',
-  description: 'Licenciado en Psicología (Cédula 12309823). Atención psicológica individual para adultos. Consultorio presencial en Xalapa, Veracruz y sesiones en línea. Agenda tu cita.',
-  keywords: ['psicólogo', 'terapia', 'psicología', 'Xalapa', 'terapia online', 'salud mental', 'ansiedad', 'depresión', 'estrés', 'Diego Navarro'],
+  title: 'Diego Armando Navarro Nolasco | Psicólogo Gestalt y Dr. en Neurociencias | Xalapa',
+  description: 'Terapia Gestalt para adultos con enfoque en el aquí y ahora. Doctor en Investigaciones Cerebrales (UV), cédula 12309823. Presencial en Xalapa y en línea.',
+  keywords: ['psicólogo', 'terapia gestalt', 'psicología', 'Xalapa', 'terapia online', 'salud mental', 'ansiedad', 'depresión', 'neurociencias', 'Diego Navarro', 'Navarro Nolasco'],
   authors: [{ name: 'Diego Armando Navarro Nolasco' }],
   creator: 'Diego Armando Navarro Nolasco',
   publisher: 'Diego Armando Navarro Nolasco',
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'es_MX',
     url: 'https://psicologo-diego-navarro.vercel.app',
-    title: 'Diego Armando Navarro Nolasco | Psicólogo - Terapia Individual Adultos',
-    description: 'Atención psicológica individual para adultos. Presencial en Xalapa y en línea. Cédula profesional 12309823.',
+    title: 'Diego Armando Navarro Nolasco | Psicólogo Gestalt y Dr. en Neurociencias',
+    description: 'Terapia Gestalt para adultos. Doctor en Investigaciones Cerebrales (UV). Presencial en Xalapa y en línea. Cédula 12309823.',
     siteName: 'Diego Armando Navarro Nolasco - Psicólogo',
     images: [
       {
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Diego Armando Navarro Nolasco | Psicólogo',
-    description: 'Terapia individual para adultos. Presencial en Xalapa y online.',
+    description: 'Terapia Gestalt para adultos. Presencial en Xalapa y online.',
     images: ['/og-image.jpg'],
   },
   verification: {

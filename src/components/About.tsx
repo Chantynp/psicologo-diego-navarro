@@ -1,52 +1,49 @@
 'use client';
 
-import { GraduationCap, Award, UserCheck, Heart, Brain, Leaf } from 'lucide-react';
+import { GraduationCap, Award, BookOpen, Leaf, Clock, HeartHandshake } from 'lucide-react';
 
 const credentials = [
   {
     icon: GraduationCap,
-    title: 'Licenciatura en Psicología',
-    institution: 'Universidad del Golfo de México Norte, Campus Tierra Blanca',
-    year: 'Titulado',
-    color: 'primary',
+    title: 'Lic. en Psicología',
+    institution: 'Universidad del Golfo de México Norte',
+    year: 'Cédula profesional 12309823',
   },
   {
     icon: Award,
-    title: 'Cédula Profesional',
-    institution: 'Registro oficial: 12309823',
-    year: 'Vigente',
-    color: 'emerald',
+    title: 'Dr. en Investigaciones Cerebrales',
+    institution: 'Universidad Veracruzana (IICE)',
+    year: 'Titulado · Febrero 2026',
   },
   {
-    icon: UserCheck,
-    title: 'Experiencia Clínica',
-    institution: 'Atención individual adultos',
-    year: 'Presencial y Online',
-    color: 'primary',
+    icon: BookOpen,
+    title: 'Investigador y divulgador',
+    institution: 'Publicaciones en BMC Psychology y eNeurobiología',
+    year: 'Ansiedad y neurofisiología',
   },
 ];
 
 const values = [
   {
-    icon: Heart,
-    title: 'Empatía genuina',
-    description: 'Espacio seguro, sin juicios, donde te sientas escuchado y comprendido profundamente.',
-  },
-  {
-    icon: Brain,
-    title: 'Evidencia científica',
-    description: 'Intervenciones basadas en enfoques con respaldo empírico y actualización constante.',
+    icon: Clock,
+    title: 'Aquí y ahora',
+    description: 'El presente es el único lugar donde el cambio es posible. Trabajamos sobre lo que te pasa hoy, no solo sobre tu historia.',
   },
   {
     icon: Leaf,
-    title: 'Enfoque integral',
-    description: 'Considero tu historia, contexto y recursos personales para un acompañamiento a tu medida.',
+    title: 'Cuerpo y emoción',
+    description: 'La Gestalt integra lo que sientes y cómo lo habita tu cuerpo. Las emociones se viven y se respiran, no solo se analizan.',
+  },
+  {
+    icon: HeartHandshake,
+    title: 'Ciencia y humanidad',
+    description: 'Mi formación en neurociencias me da claridad técnica; la Gestalt me da la sensibilidad para acompañarte.',
   },
 ];
 
 export default function About() {
   return (
-    <section id="sobre-mi" className="py-20 lg:py-32 bg-white" aria-labelledby="about-title">
+    <section id="sobre-mi" className="py-20 lg:py-28 bg-white" aria-labelledby="about-title">
       <div className="section-container">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           <div>
@@ -55,26 +52,24 @@ export default function About() {
               Sobre mí
             </div>
             <h2 id="about-title" className="section-title">
-              Acompañamiento profesional para tu <span className="text-primary-700">crecimiento personal</span>
+              Ciencia del cerebro, <span className="text-primary-700">corazón Gestalt</span>
             </h2>
-            <p className="section-subtitle">
-              Soy Diego Armando Navarro Nolasco, psicólogo licenciado con cédula profesional 12309823. Mi práctica se centra en la terapia individual para adultos, ofreciendo un espacio de confianza donde trabajar tus dificultades emocionales y potenciar tu bienestar.
-            </p>
             <p className="mt-6 text-neutral-600 leading-relaxed">
-              Mi formación en la Universidad del Golfo de México me proporcionó bases sólidas en evaluación, diagnóstico e intervención psicológica. Combino rigor técnico con una actitud humana y cercana, porque entiendo que pedir ayuda requiere valentía y merece el mejor trato posible.
+              Soy psicólogo y doctor en Investigaciones Cerebrales por la Universidad Veracruzana. Mi camino une dos mundos que suelen vivir separados: la rigurosidad de la neurociencia y la calidez de la terapia Gestalt.
             </p>
-            <p className="mt-6 text-neutral-600 leading-relaxed">
-              Atiendo de forma presencial en Xalapa, Veracruz y también en modalidad online, adaptándome a tus necesidades y circunstancias. Cada proceso es único y lo diseño contigo, respetando tu ritmo y objetivos.
+            <p className="mt-4 text-neutral-600 leading-relaxed">
+              En mi tesis doctoral estudié con electroencefalogramas cómo la ansiedad se refleja en el cerebro y por qué el apoyo social nos protege. Esa misma curiosidad me acompaña en consulta: cada persona es única, y el cambio real no viene de recetas, sino de darse cuenta.
+            </p>
+            <p className="mt-4 text-neutral-600 leading-relaxed">
+              Acompaño a adultos en procesos de ansiedad, depresión, autoestima y momentos de transición, presencial en Xalapa o en línea.
             </p>
           </div>
-          
+
           <div className="space-y-6">
-            {credentials.map((cred, index) => (
+            {credentials.map((cred) => (
               <div key={cred.title} className="card group">
                 <div className="flex items-start gap-4">
-                  <div className={`flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center ${
-                    cred.color === 'primary' ? 'bg-primary-100 text-primary-700' : 'bg-emerald-100 text-emerald-700'
-                  } group-hover:scale-110 transition-transform duration-300`}>
+                  <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-primary-100 text-primary-700 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     <cred.icon className="w-6 h-6" aria-hidden="true" />
                   </div>
                   <div>
@@ -87,13 +82,13 @@ export default function About() {
             ))}
           </div>
         </div>
-        
-        <div className="mt-20">
+
+        <div className="mt-16">
           <h3 className="text-2xl font-display font-bold text-center text-neutral-900">
-            Principios que guían mi trabajo
+            Tres pilares de mi trabajo
           </h3>
-          <div className="mt-10 grid md:grid-cols-3 gap-6">
-            {values.map((value, index) => (
+          <div className="mt-8 grid md:grid-cols-3 gap-6">
+            {values.map((value) => (
               <div key={value.title} className="card text-center group">
                 <div className="w-14 h-14 mx-auto mb-4 rounded-xl bg-primary-100 text-primary-700 flex items-center justify-center group-hover:bg-primary-700 group-hover:text-white transition-all duration-300">
                   <value.icon className="w-7 h-7" aria-hidden="true" />

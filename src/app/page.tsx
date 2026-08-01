@@ -3,13 +3,14 @@ import Hero from '@/components/Hero';
 import About from '@/components/About';
 import Services from '@/components/Services';
 import Approach from '@/components/Approach';
+import Research from '@/components/Research';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import JsonLd from '@/components/JsonLd';
 
 export const metadata: Metadata = {
-  title: 'Diego Armando Navarro Nolasco | Psicólogo - Terapia Individual Adultos | Xalapa y Online',
-  description: 'Licenciado en Psicología (Cédula 12309823). Atención psicológica individual para adultos. Consultorio presencial en Xalapa, Veracruz y sesiones en línea. Agenda tu cita.',
+  title: 'Diego Armando Navarro Nolasco | Psicólogo Gestalt y Dr. en Neurociencias | Xalapa',
+  description: 'Terapia Gestalt para adultos con enfoque en el aquí y ahora. Doctor en Investigaciones Cerebrales (UV). Presencial en Xalapa y en línea. Agenda tu cita.',
 };
 
 export default function HomePage() {
@@ -25,6 +26,7 @@ export default function HomePage() {
             <a href="#sobre-mi" className="text-sm font-medium text-neutral-600 hover:text-primary-700 transition-colors">Sobre mí</a>
             <a href="#servicios" className="text-sm font-medium text-neutral-600 hover:text-primary-700 transition-colors">Servicios</a>
             <a href="#enfoque" className="text-sm font-medium text-neutral-600 hover:text-primary-700 transition-colors">Enfoque</a>
+            <a href="#investigacion" className="text-sm font-medium text-neutral-600 hover:text-primary-700 transition-colors">Investigación</a>
             <a href="#contacto" className="btn-primary text-sm px-4 py-2">Agendar cita</a>
           </div>
           <div className="flex md:hidden items-center gap-4">
@@ -41,6 +43,7 @@ export default function HomePage() {
         <About />
         <Services />
         <Approach />
+        <Research />
         <Contact />
       </main>
 
