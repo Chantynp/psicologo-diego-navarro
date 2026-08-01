@@ -6,22 +6,22 @@ const principles = [
   {
     icon: Eye,
     title: 'Darse cuenta',
-    description: 'El corazón de la Gestalt: notar qué sientes, qué piensas y qué evitas. Lo que se hace consciente, puede transformarse.',
+    description: 'Notar qué sientes y qué evitas: lo que se hace consciente, puede transformarse.',
   },
   {
     icon: Sun,
     title: 'Aquí y ahora',
-    description: 'Trabajamos con lo que traes hoy a la sesión, no con interpretaciones lejanas de tu historia.',
+    description: 'Trabajamos con lo que traes hoy a la sesión, no con lecturas lejanas de tu historia.',
   },
   {
     icon: Hand,
     title: 'Cuerpo presente',
-    description: 'La emoción habita en tu cuerpo: la respiración, la tensión, el gesto. Aprendemos a escucharlo y a expresarlo.',
+    description: 'La emoción vive en tu cuerpo: la respiración, la tensión, el gesto. Aprendemos a escucharla.',
   },
   {
     icon: Route,
     title: 'Contacto y relación',
-    description: 'La vida se vive en relación. Exploramos cómo te vinculas y dónde pones distancia o te acercas de más.',
+    description: 'Exploramos cómo te vinculas: dónde pones distancia y dónde te acercas de más.',
   },
 ];
 
@@ -29,17 +29,17 @@ const processSteps = [
   {
     number: '01',
     title: 'Nos conocemos',
-    description: 'Primera sesión para escucharte, entender tu motivo y sentir si conectamos. Sin compromiso.',
+    description: 'Primera sesión para escucharte y sentir si conectamos. Sin compromiso.',
   },
   {
     number: '02',
     title: 'Trabajo de darse cuenta',
-    description: 'Sesiones semanales donde exploramos lo que aparece: emociones, cuerpo, patrones, relaciones.',
+    description: 'Sesiones semanales explorando emociones, cuerpo, patrones y relaciones.',
   },
   {
     number: '03',
     title: 'Integración y cierre',
-    description: 'Cuando tu vida responde distinto, cerramos el proceso con claridad y herramientas propias.',
+    description: 'Cuando tu vida responde distinto, cerramos con claridad y herramientas propias.',
   },
 ];
 
@@ -56,7 +56,7 @@ export default function Approach() {
             Terapia <span className="text-primary-700">Gestalt</span>
           </h2>
           <p className="section-subtitle mx-auto">
-            No eres un diagnóstico: eres una persona completa. La Gestalt no etiqueta síntomas, te acompaña a vivir con más conciencia y libertad.
+            La Gestalt no etiqueta síntomas: te acompaña a vivir con más conciencia y libertad.
           </p>
         </div>
 
@@ -76,11 +76,11 @@ export default function Approach() {
           <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary-200 to-primary-400 hidden lg:block" aria-hidden="true" />
           <div className="space-y-10">
             {processSteps.map((step) => (
-              <div key={step.number} className="relative lg:pl-20">
-                <div className="absolute left-0 top-0 w-16 h-16 rounded-full bg-primary-600 text-white flex items-center justify-center text-2xl font-bold shadow-lg shadow-primary-600/30 z-10">
+              <div key={step.number} className="relative flex items-start gap-4 lg:block lg:pl-20">
+                <div className="w-12 h-12 lg:w-16 lg:h-16 rounded-full bg-primary-600 text-white flex items-center justify-center text-lg lg:text-2xl font-bold shadow-lg shadow-primary-600/30 z-10 flex-shrink-0 lg:absolute lg:left-0 lg:top-0">
                   {step.number}
                 </div>
-                <div className="card pl-6 lg:pl-0">
+                <div className="card flex-1 lg:pl-0">
                   <h3 className="text-xl font-semibold text-neutral-900 mb-2">{step.title}</h3>
                   <p className="text-neutral-600">{step.description}</p>
                 </div>

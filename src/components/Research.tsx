@@ -27,7 +27,7 @@ const news = [
   {
     title: 'Apoyo social es vital para la salud mental de jóvenes',
     source: 'La Silla Rota · Veracruz',
-    description: 'El sueño, la soledad percibida y el ciclo ovárico alteran las ondas cerebrales, según su estudio.',
+    description: 'Sueño, soledad percibida y ciclo ovárico alteran las ondas cerebrales, según su estudio.',
     url: 'https://lasillarota.com/veracruz/local/2026/2/21/apoyo-social-es-vital-para-la-salud-mental-de-jovenes-587852.html',
   },
 ];
@@ -45,7 +45,7 @@ export default function Research() {
             Lo que aprendí del <span className="text-primary-700">cerebro</span>
           </h2>
           <p className="section-subtitle mx-auto">
-            Mi tesis doctoral estudió la ansiedad directamente en las ondas cerebrales de jóvenes con electroencefalograma. La ciencia me enseñó que el bienestar se construye en la relación y en el cuerpo.
+            Mi tesis doctoral midió la ansiedad en las ondas cerebrales de jóvenes con EEG: el bienestar se construye en la relación y en el cuerpo.
           </p>
         </div>
 

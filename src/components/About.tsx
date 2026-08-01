@@ -27,17 +27,17 @@ const values = [
   {
     icon: Clock,
     title: 'Aquí y ahora',
-    description: 'El presente es el único lugar donde el cambio es posible. Trabajamos sobre lo que te pasa hoy, no solo sobre tu historia.',
+    description: 'El presente es el único lugar donde el cambio es posible: trabajamos sobre lo que te pasa hoy.',
   },
   {
     icon: Leaf,
     title: 'Cuerpo y emoción',
-    description: 'La Gestalt integra lo que sientes y cómo lo habita tu cuerpo. Las emociones se viven y se respiran, no solo se analizan.',
+    description: 'Las emociones se viven en el cuerpo: se respiran y se expresan, no solo se analizan.',
   },
   {
     icon: HeartHandshake,
     title: 'Ciencia y humanidad',
-    description: 'Mi formación en neurociencias me da claridad técnica; la Gestalt me da la sensibilidad para acompañarte.',
+    description: 'Neurociencias para la claridad técnica; Gestalt para la sensibilidad del acompañamiento.',
   },
 ];
 
@@ -55,13 +55,13 @@ export default function About() {
               Ciencia del cerebro, <span className="text-primary-700">corazón Gestalt</span>
             </h2>
             <p className="mt-6 text-neutral-600 leading-relaxed">
-              Soy psicólogo y doctor en Investigaciones Cerebrales por la Universidad Veracruzana. Mi camino une dos mundos que suelen vivir separados: la rigurosidad de la neurociencia y la calidez de la terapia Gestalt.
+              Soy psicólogo y doctor en Investigaciones Cerebrales por la Universidad Veracruzana. Mi camino une dos mundos: la rigurosidad de la neurociencia y la calidez de la terapia Gestalt.
             </p>
             <p className="mt-4 text-neutral-600 leading-relaxed">
-              En mi tesis doctoral estudié con electroencefalogramas cómo la ansiedad se refleja en el cerebro y por qué el apoyo social nos protege. Esa misma curiosidad me acompaña en consulta: cada persona es única, y el cambio real no viene de recetas, sino de darse cuenta.
+              En mi tesis doctoral medí la ansiedad en las ondas cerebrales de jóvenes con electroencefalograma. Esa curiosidad me acompaña en consulta: cada persona es única, y el cambio real viene de darse cuenta.
             </p>
             <p className="mt-4 text-neutral-600 leading-relaxed">
-              Acompaño a adultos en procesos de ansiedad, depresión, autoestima y momentos de transición, presencial en Xalapa o en línea.
+              Acompaño a adultos con ansiedad, depresión, autoestima y transiciones, presencial en Xalapa o en línea.
             </p>
           </div>
 

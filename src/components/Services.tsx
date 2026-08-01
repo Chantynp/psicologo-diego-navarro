@@ -6,22 +6,22 @@ const services = [
   {
     icon: Brain,
     title: 'Ansiedad y estrés',
-    description: 'Preocupación constante, ataques de pánico, tensión que no cede. Aprendemos a escuchar la señal que tu cuerpo te está dando.',
+    description: 'Preocupación constante, tensión que no cede. Aprendemos a escuchar la señal de tu cuerpo.',
   },
   {
     icon: Cloud,
     title: 'Depresión y tristeza',
-    description: 'Falta de energía, pérdida de interés, vacío. Un espacio para reconocer tu malestar y volver a habitar tu vida.',
+    description: 'Falta de energía, pérdida de interés, vacío. Un espacio para volver a habitar tu vida.',
   },
   {
     icon: Heart,
     title: 'Autoestima y relaciones',
-    description: 'Autocrítica, inseguridad, dificultad para poner límites. Trabajamos el vínculo contigo para sanar los vínculos con otros.',
+    description: 'Autocrítica, inseguridad, límites difíciles. Sanar el vínculo contigo para sanar con otros.',
   },
   {
     icon: Anchor,
     title: 'Transiciones de vida',
-    description: 'Duelos, separaciones, cambios laborales o de etapa. Momentos de crisis que también son puertas hacia otra forma de vivir.',
+    description: 'Duelos, separaciones, cambios de etapa. Crisis que son puertas hacia otra forma de vivir.',
   },
 ];
 
@@ -43,7 +43,7 @@ export default function Services() {
             ¿Con qué puedo <span className="text-primary-700">acompañarte</span>?
           </h2>
           <p className="section-subtitle mx-auto">
-            Terapia individual para adultos. Si tu situación no está aquí, escríbeme: la primera sesión es para conocernos.
+            Terapia individual para adultos. Si tu situación no está aquí, escríbeme.
           </p>
         </div>
 
