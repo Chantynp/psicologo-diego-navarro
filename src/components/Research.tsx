@@ -1,6 +1,7 @@
 'use client';
 
 import { FileText, Newspaper, ExternalLink } from 'lucide-react';
+import CourseDownload from '@/components/CourseDownload';
 
 const publications = [
   {
@@ -99,6 +100,8 @@ export default function Research() {
             </article>
           ))}
         </div>
+
+        <CourseDownload />
       </div>
     </section>
   );
