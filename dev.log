@@ -1,0 +1,27 @@
+npm notice run psicologo-diego-navarro@1.0.0 dev
+npm notice run next dev
+▲ Next.js 16.2.12 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.100.71:3000
+- Environments: .env.local
+✓ Ready in 1142ms
+
+ POST /api/curso 401 in 1270ms (next.js: 1238ms, application-code: 32ms)
+Error generando enlace de descarga: Error: Vercel Blob: Blob path does not match the signed token scope; expected `InvestigaciÃ³n mÃ©dica con IA y GPC.zip`, got `Investigación médica con IA y GPC.zip`.
+    at POST (src\app\api\curso\route.ts:89:46)
+  87 |       validUntil,
+  88 |     });
+> 89 |     const { presignedUrl } = await presignUrl(token, {
+     |                                              ^
+  90 |       pathname: BLOB_PATHNAME,
+  91 |       operation: 'get',
+  92 |       access: 'private',
+ POST /api/curso 500 in 588ms (next.js: 5ms, application-code: 583ms)
+ POST /api/curso 401 in 103ms (next.js: 93ms, application-code: 10ms)
+ POST /api/curso 200 in 272ms (next.js: 4ms, application-code: 268ms)
+ POST /api/curso 401 in 11ms (next.js: 4ms, application-code: 7ms)
+ POST /api/curso 401 in 11ms (next.js: 4ms, application-code: 7ms)
+ POST /api/curso 401 in 11ms (next.js: 3ms, application-code: 8ms)
+ POST /api/curso 401 in 9ms (next.js: 3ms, application-code: 6ms)
+ POST /api/curso 401 in 11ms (next.js: 4ms, application-code: 6ms)
+ POST /api/curso 429 in 11ms (next.js: 4ms, application-code: 7ms)

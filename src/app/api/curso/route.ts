@@ -4,8 +4,8 @@ import { issueSignedToken, presignUrl } from '@vercel/blob';
 
 export const runtime = 'nodejs';
 
-const BLOB_PATHNAME = 'material/curso-investigacion-medica-ia.zip';
-const DOWNLOAD_FILENAME = 'curso-investigacion-medica-ia.zip';
+const BLOB_PATHNAME = 'Investigación médica con IA y GPC.zip';
+const DOWNLOAD_FILENAME = 'Investigación médica con IA y GPC.zip';
 const URL_TTL_MS = 60_000;
 const MAX_ATTEMPTS = 5;
 const ATTEMPT_WINDOW_MS = 10 * 60_000;
@@ -81,8 +81,13 @@ export async function POST(request: Request) {
 
   try {
     const validUntil = Date.now() + URL_TTL_MS;
+
+    // El alcance del token se pide como `*` a proposito: el SDK decodifica el
+    // `delegationToken` con `atob()` (latin1) y aborta si el pathname lleva
+    // acentos o espacios. Con `*` esa comparacion se omite, mientras que la
+    // URL firmada sigue limitada a BLOB_PATHNAME y caduca en 60 s.
     const token = await issueSignedToken({
-      pathname: BLOB_PATHNAME,
+      pathname: '*',
       operations: ['get'],
       validUntil,
     });

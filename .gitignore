@@ -43,4 +43,5 @@ next-env.d.ts
 # OS
 Thumbs.db
 ehthumbs.db
-Desktop.ini
+Desktop.inidev.log
+dev.pid

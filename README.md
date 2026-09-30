@@ -89,7 +89,7 @@ store privado** y se descarga mediante un enlace firmado de 60 segundos.
    En producción el SDK usa OIDC automáticamente; el token solo hace falta para
    la carga inicial.
 
-**Subir el archivo (128 MB, carga multipart):**
+**Subir el archivo (171 MB, carga multipart):**
 
 ```bash
 $env:BLOB_READ_WRITE_TOKEN = "vercel_blob_rw_XXXX"
@@ -104,8 +104,14 @@ node scripts/upload-curso.mjs "C:\ruta\al\curso.zip"
 3. Si es correcta, firma un enlace temporal (`issueSignedToken` + `presignUrl`,
    60 s) y el navegador descarga el ZIP directo del CDN.
 
-> El pathname del blob debe ser `material/curso-investigacion-medica-ia.zip`
-> (ver `src/app/api/curso/route.ts`).
+> El blob ya está subido como `Investigación médica con IA y GPC.zip`
+> (store privado `Material-Curso`); ese es el pathname en
+> `src/app/api/curso/route.ts`. Si se renombra, hay que actualizarlo ahí.
+>
+> El token de delegación se pide con alcance `*` a propósito: el SDK decodifica
+> el `delegationToken` con `atob()` (latin1) y falla al comparar pathnames con
+> acentos o espacios. La URL firmada sigue limitada a un único archivo y
+> caduca en 60 s.
 
 
 ## 🔑 Datos de integración
@@ -118,7 +124,7 @@ node scripts/upload-curso.mjs "C:\ruta\al\curso.zip"
 | Email | `danavarro2040@gmail.com` |
 | LinkedIn | `https://www.linkedin.com/in/diego-navarro-a4a56207` |
 | Verificación Google | `zDF_N7L0rcPb9txrvLKTqDdMftRTrHxyl0m-r7Pm7ss` |
-| Blob (material curso) | `material/curso-investigacion-medica-ia.zip` (store privado) |
+| Blob (material curso) | `Investigación médica con IA y GPC.zip` (store privado `Material-Curso`, 171 MB) |
 
 ## ✨ Personalización
 

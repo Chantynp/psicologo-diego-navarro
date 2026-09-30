@@ -80,7 +80,7 @@ export default function CourseDownload() {
           <div className="flex-1">
             <h3 className="text-lg font-semibold text-neutral-900">Material del curso</h3>
             <p className="text-sm text-neutral-600 mt-1">
-              Investigación médica apoyada por IA · Archivo ZIP · 128 MB
+              Investigación médica apoyada por IA · Archivo ZIP · 171 MB
             </p>
           </div>
           <button
