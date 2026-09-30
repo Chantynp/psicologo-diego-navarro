@@ -56,20 +56,57 @@ src/
 │   ├── layout.tsx           # Layout raíz + fonts + metadata + verificación Google
 │   ├── page.tsx             # Página principal (composición)
 │   ├── sitemap.ts           # Sitemap XML
-│   ├── privacidad/page.tsx  # Aviso de privacidad (LFPDPPP)
+│   ├── privacidad/page.tsx  # Aviso de privacidad (normativa federal vigente)
 │   ├── terminos/page.tsx    # Términos y condiciones
-│   └── consentimiento/      # Consentimiento informado
+│   ├── consentimiento/      # Consentimiento informado
+│   └── api/curso/route.ts   # Descarga protegida del material del curso
 ├── components/
 │   ├── Hero.tsx             # Hero: identidad Gestalt + CTAs
 │   ├── About.tsx            # Trayectoria (Lic. UGMN + Doctorado UV) + pilares
 │   ├── Services.tsx         # 4 áreas de acompañamiento
 │   ├── Approach.tsx         # Principios de terapia Gestalt + proceso
-│   ├── Research.tsx         # Publicaciones y noticias reales
+│   ├── Research.tsx         # Publicaciones, noticias y material del curso
+│   ├── CourseDownload.tsx   # Modal de descarga con contraseña (Vercel Blob)
 │   ├── Contact.tsx          # Formulario Formspree + Calendly + WhatsApp
 │   ├── Footer.tsx           # Footer con links, LinkedIn, contacto
 │   └── JsonLd.tsx           # Schema.org structured data
 └── public/                  # Imágenes, favicons, manifest
 ```
+
+## 📦 Material del curso (descarga protegida)
+
+El ZIP del curso **no** vive en el repositorio (GitHub bloquea archivos de más de
+100 MB) ni en `/public` (sería accesible sin contraseña). Vive en un **Vercel Blob
+store privado** y se descarga mediante un enlace firmado de 60 segundos.
+
+**Configuración inicial (una sola vez, en vercel.com):**
+
+1. Project → **Storage** → Create Database → **Blob** → acceso **Private** →
+   nombre `curso` → seleccionar Production y Preview.
+2. Copiar el **Read-write token** (pestaña *Blob* del store).
+3. Project → **Settings → Environment Variables** → añadir:
+   - `CURSO_PASSWORD` = la contraseña del curso ( Production y Preview ).
+   En producción el SDK usa OIDC automáticamente; el token solo hace falta para
+   la carga inicial.
+
+**Subir el archivo (128 MB, carga multipart):**
+
+```bash
+$env:BLOB_READ_WRITE_TOKEN = "vercel_blob_rw_XXXX"
+node scripts/upload-curso.mjs "C:\ruta\al\curso.zip"
+```
+
+**Cómo funciona la descarga:**
+
+1. El modal pide la contraseña y hace `POST /api/curso`.
+2. La ruta compara con `CURSO_PASSWORD` (comparación en tiempo constante) y
+   limita a 5 intentos por IP cada 10 minutos.
+3. Si es correcta, firma un enlace temporal (`issueSignedToken` + `presignUrl`,
+   60 s) y el navegador descarga el ZIP directo del CDN.
+
+> El pathname del blob debe ser `material/curso-investigacion-medica-ia.zip`
+> (ver `src/app/api/curso/route.ts`).
+
 
 ## 🔑 Datos de integración
 
@@ -81,11 +118,12 @@ src/
 | Email | `danavarro2040@gmail.com` |
 | LinkedIn | `https://www.linkedin.com/in/diego-navarro-a4a56207` |
 | Verificación Google | `zDF_N7L0rcPb9txrvLKTqDdMftRTrHxyl0m-r7Pm7ss` |
+| Blob (material curso) | `material/curso-investigacion-medica-ia.zip` (store privado) |
 
 ## ✨ Personalización
 
 ### Colores (tailwind.config.ts)
-Paleta actual: verdes primarios (`primary.700: #15803d`). Otras opciones: azul serenidad, teal/salvia, terracota cálido, morado introspección.
+Paleta actual: violeta (`primary.700: #6d28d9`). Otras opciones: verde naturaleza, azul serenidad, teal salvia, terracota cálido.
 
 ### Foto del psicólogo
 La imagen principal del hero es `public/hero-full.webp` (WebP vertical, se genera desde el PNG original). Regenera assets con:
